@@ -41,3 +41,12 @@ h1 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
+main div {
+    height: 30rem;
+    border: solid black 1px
+}
+
+main :nth-child(3) {
+    height: 15rem;
+}

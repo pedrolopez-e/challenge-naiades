@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,10 +11,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-}
-
-header, main, footer {
-    border: solid
 }
 
 header {
@@ -64,7 +60,8 @@ main >:nth-child(3) {
     padding-bottom: 8rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
     font-size: 1.5rem;
     font-weight: 800;
@@ -126,4 +123,87 @@ main >:nth-child(2) p {
     align-items: center;
     font-size: 3rem;
     color: rgb(73, 2, 95);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f5f5f5ec;
+    background-color: blueviolet;
+}
+
+#rights {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-end;
+}
+
+/*------------------ MEDIA QUERIES ---------------------*/
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 5rem
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    main div p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        width: 12rem;
+    }
+
+    main >:first-child {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    main >:nth-child(2) {
+        flex-direction: column;
+    }
+
+    main >:nth-child(2) p {
+        width: 80vw;
+    }
+
+    #vid-box {
+        height: 40%;
+        width: 80vw;
+    }
+
+    #speaker p {
+        font-size: 1.2rem;
+    }
+
+    #speaker {
+        height: 11rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1rem;
+        padding: 2rem;
+    }
+
+    footer div, #rights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
